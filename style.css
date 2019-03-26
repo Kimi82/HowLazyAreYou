@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(222, 234, 245);
+
+}
+
+#header{
+    width: 100%;
+    background-color: rgb(16, 148, 108);
+    text-align: center;
+}
+
+#left{
+    width: 20vw;
+    background-color: rgb(64, 219, 173);
+    float: left;
+}
+
+#right{
+    width: 20vw;
+    background-color: rgb(64, 219, 173);
+    float: left;
+}
+
+#mid{
+    width: 60vw;
+    background-color: rgb(59, 194, 153);
+    float: left;
+    z-index: 3;
+    
+}
+#footer{
+    clear: both;
+}
+
+#kingIcon{
+    margin-top: 20px;
+    z-index: 5;
+    width: 60%;
+
+}
+
+#kingIconBack{
+    margin-top: 20px;
+    z-index: 4;
+    width: 60%;
+    margin-left: -50%;
+    
+}
