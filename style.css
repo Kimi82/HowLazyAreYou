@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
     color: rgb(222, 234, 245);
+    overflow: hidden
 
 }
 
@@ -10,42 +11,66 @@
     width: 100%;
     background-color: rgb(16, 148, 108);
     text-align: center;
+    position: relative;
+    z-index: 6;
 }
 
 #left{
-    width: 20vw;
+    width: 20%;
     background-color: rgb(64, 219, 173);
     float: left;
 }
 
 #right{
-    width: 20vw;
+    width: 20%;
     background-color: rgb(64, 219, 173);
     float: left;
-}
-
-#mid{
-    width: 60vw;
-    background-color: rgb(59, 194, 153);
-    float: left;
-    z-index: 3;
-    
 }
 #footer{
     clear: both;
 }
 
+#mid{
+    width: 60%;
+    background-color: #3bc299;
+    float: left;
+    z-index: 3;
+    position: relative;
+}
+
+
 #kingIcon{
-    margin-top: 20px;
+    
     z-index: 5;
     width: 60%;
-
+    position: relative;
+    left: 20%;
+    
 }
 
 #kingIconBack{
-    margin-top: 20px;
     z-index: 4;
-    width: 60%;
-    margin-left: -50%;
-    
+    position: relative;
+    left: 20%;
+    top: -860px
+}
+
+
+/* treść komentarza, ignorowana przez przegladarkę internetową */
+
+input[type=text]{
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+    color: black;
+}
+
+input[type=text]:focus{
+    border-color: red;
+    box-shadow: 0 0 8px 0 red;
 }
