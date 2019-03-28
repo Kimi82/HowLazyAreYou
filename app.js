@@ -1,3 +1,7 @@
-//musi być pod ikonka krola
-//<div>Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div>
+const tasks = [];
+var submitTaskButton = document.getElementById("submitTaskButton");
 
+submitTaskButton.onclick = function() {
+    var ta= document.getElementById("task").value
+    tasks = ta.push()
+}
