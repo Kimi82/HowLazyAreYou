@@ -60,7 +60,7 @@ body{background-color: #40dbad}
     z-index: 5;
     height: 100%;
     width: 100%;
-    top: 0;
+    top: -118px;
     left: 0;
     position: relative;
     text-align: center;
@@ -111,4 +111,20 @@ li:hover{
    position: relative; 
    
    left: 950px;
+}
+
+li::before{
+content: url(done.png);
+background-size: 50px 50px;
+display: inline-block;
+width: 50px; 
+height: 50px;
+}
+
+li::after{
+content: url(delete.png);
+background-size: 50px 50px;
+display: inline-block;
+width: 50px; 
+height: 50px;
 }
