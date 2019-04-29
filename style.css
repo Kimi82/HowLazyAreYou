@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
     color: rgb(222, 234, 245);
-    overflow: hidden
+    overflow: hidden;
     
 }
 body{background-color: #40dbad}
@@ -37,23 +37,33 @@ body{background-color: #40dbad}
     float: left;
     z-index: 3;
     position: relative;
+    
 }
 
 
 #kingIcon{
-    
-    z-index: 5;
-    width: 60%;
-    position: relative;
-    left: 20%;
+    z-index: 6;
+    position: absolute;
+    top: 0;
+    left: 160px;
     
 }
 
 #kingIconBack{
     z-index: 4;
     position: relative;
-    left: 20%;
-    top: -860px
+    
+    
+}
+
+#gradient{
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+    text-align: center;
 }
 
 
@@ -76,4 +86,29 @@ input, button{
 input:focus, button:hover{
     border-color: red;
     box-shadow: 0 0 8px 0 red;
+}
+ul{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    list-style-type: circle;
+    
+
+}
+li:first-child{margin-top:0px};
+li{margin-top:30px};
+
+li:hover{
+    text-decoration: line-through;
+    text-decoration-color: crimson;
+}
+
+#counter{
+   z-index: 10;
+   color: black;
+   font: bold;
+   font-size: 150%;
+   position: relative; 
+   
+   left: 950px;
 }
