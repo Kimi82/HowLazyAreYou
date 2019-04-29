@@ -96,7 +96,11 @@ ul{
 
 }
 li:first-child{margin-top:0px};
-li{margin-top:30px};
+li{
+    margin-top:30px;
+    text-align: center;
+    font-size: 50px;
+};
 
 li:hover{
     text-decoration: line-through;
@@ -113,18 +117,17 @@ li:hover{
    left: 950px;
 }
 
-li::before{
-content: url(done.png);
-background-size: 50px 50px;
+
+
+li::before,
+li::after{
+content: "";
+background-size: 40px 40px;
 display: inline-block;
-width: 50px; 
-height: 50px;
+width: 40px; 
+height: 40px;
+
 }
 
-li::after{
-content: url(delete.png);
-background-size: 50px 50px;
-display: inline-block;
-width: 50px; 
-height: 50px;
-}
+li::before{background-image: url("delete.png");}
+li::after{background-image: url("done.png");}
